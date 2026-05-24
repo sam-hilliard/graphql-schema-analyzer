@@ -1,3 +1,11 @@
+"""
+parser.py
+
+Parses GraphQL introspection schema
+"""
+
+
+
 import json
 import sys
 
@@ -35,6 +43,28 @@ def build_type_map(types):
         if t.get("name")
     }
 
+import re
+
+def tokenize_name(name):
+    """
+    Split camelCase / PascalCase / snake_case into normalized tokens.
+    """
+
+    parts = re.findall(
+        r"[A-Z]?[a-z]+|[A-Z]+(?=[A-Z]|$)",
+        name
+    )
+
+    snake_parts = []
+
+    for part in parts:
+        snake_parts.extend(part.split("_"))
+
+    return [
+        p.lower()
+        for p in snake_parts
+        if p
+    ]
 
 def extract_fields(root_type, type_map):
     """
@@ -57,6 +87,7 @@ def extract_fields(root_type, type_map):
 
         operation = {
             "name": field["name"],
+            "tokens": tokenize_name(field["name"]),
             "description": field.get("description"),
 
             "deprecated": field.get("isDeprecated", False),
@@ -70,6 +101,7 @@ def extract_fields(root_type, type_map):
         operations.append(operation)
 
     return operations
+
 
 
 def main(path):
