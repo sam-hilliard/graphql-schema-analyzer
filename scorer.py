@@ -27,102 +27,60 @@ def score_operation(op):
     tags = set()
     reasons = []
 
-    #
-    # Operation type bias
-    #
-
+    # Mutation bias
     if op["operation_type"] == "mutation":
-        add_tag(
-            tags,
-            reasons,
-            "mutation",
-            "mutation operation"
-        )
+        add_tag(tags, reasons, "mutation", "mutation operation")
 
-    #
-    # Name token analysis
-    #
-
-    for token in op["tokens"]:
+    # Token analysis
+    for token in op.get("tokens", []):
 
         if token in ACTION_TAGS:
             for tag in ACTION_TAGS[token]:
-                add_tag(
-                    tags,
-                    reasons,
-                    tag,
-                    f"contains action token: {token}"
-                )
+                add_tag(tags, reasons, tag, f"action token: {token}")
 
         if token in OBJECT_TAGS:
             for tag in OBJECT_TAGS[token]:
-                add_tag(
-                    tags,
-                    reasons,
-                    tag,
-                    f"contains object token: {token}"
-                )
+                add_tag(tags, reasons, tag, f"object token: {token}")
 
-    #
     # Arg analysis
-    #
-
-    for arg in op["args"]:
-
+    for arg in op.get("args", []):
         for token in arg.get("tokens", []):
-
             if token in ARG_TAGS:
                 for tag in ARG_TAGS[token]:
-                    add_tag(
-                        tags,
-                        reasons,
-                        tag,
-                        f"sensitive argument: {arg['name']}"
-                    )
+                    add_tag(tags, reasons, tag, f"arg: {arg['name']}")
 
-    #
-    # Return-type analysis
-    #
+    # Return type analysis
+    returns = op.get("returns", "").lower()
 
-    returns = op["returns"].lower()
+    if returns == "string":
+        add_tag(tags, reasons, "raw-return", "returns raw string data")
 
-    if "string" == returns:
-        add_tag(
-            tags,
-            reasons,
-            "raw-return",
-            "returns raw string data"
-        )
+    # Score
+    score = sum(TAG_WEIGHTS.get(tag, 1) for tag in tags)
 
-    #
-    # Risk scoring
-    #
-
-    score = 0
-
-    for tag in tags:
-        score += TAG_WEIGHTS.get(tag, 1)
-
-    #
-    # Generate hypotheses
-    #
-
+    # Hypotheses
     hypotheses = set()
 
     for tag in tags:
         for h in HYPOTHESES.get(tag, []):
             hypotheses.add(h)
 
-    #
-    # Final object
-    #
+    return {
+        **op,
+        "risk_score": score,
+        "tags": sorted(tags),
+        "reasons": reasons,
+        "attack_hypotheses": sorted(hypotheses),
+    }
 
-    op["risk_score"] = score
-    op["tags"] = sorted(tags)
-    op["reasons"] = reasons
-    op["attack_hypotheses"] = sorted(hypotheses)
 
-    return op
+def enrich_operations(operations):
+
+    enriched = [score_operation(op) for op in operations]
+
+    enriched.sort(key=lambda x: x["risk_score"], reverse=True)
+
+    return enriched
 
 
 def main(path):
@@ -130,15 +88,7 @@ def main(path):
     with open(path) as f:
         operations = json.load(f)
 
-    enriched = []
-
-    for op in operations:
-        enriched.append(score_operation(op))
-
-    enriched.sort(
-        key=lambda x: x["risk_score"],
-        reverse=True
-    )
+    enriched = enrich_operations(operations)
 
     print(json.dumps(enriched, indent=2))
 

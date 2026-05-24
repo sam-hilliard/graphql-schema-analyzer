@@ -4,20 +4,21 @@ parser.py
 Parses GraphQL introspection schema
 """
 
+"""
+parser.py
 
+Parses GraphQL introspection schema into normalized operations
+for downstream security analysis.
+"""
 
 import json
 import sys
+import re
 
 
 def unwrap_type(type_obj):
     """
     Recursively unwrap GraphQL introspection types.
-
-    Examples:
-        NON_NULL -> ID!
-        LIST -> [User]
-        NON_NULL(LIST(NON_NULL(User))) -> [User!]!
     """
 
     kind = type_obj["kind"]
@@ -43,11 +44,10 @@ def build_type_map(types):
         if t.get("name")
     }
 
-import re
 
 def tokenize_name(name):
     """
-    Split camelCase / PascalCase / snake_case into normalized tokens.
+    Split camelCase / PascalCase / snake_case into tokens.
     """
 
     parts = re.findall(
@@ -55,20 +55,21 @@ def tokenize_name(name):
         name
     )
 
-    snake_parts = []
+    tokens = []
 
     for part in parts:
-        snake_parts.extend(part.split("_"))
+        tokens.extend(part.split("_"))
 
     return [
-        p.lower()
-        for p in snake_parts
-        if p
+        t.lower()
+        for t in tokens
+        if t
     ]
 
-def extract_fields(root_type, type_map):
+
+def extract_fields(root_type, type_map, operation_type):
     """
-    Extract operations from Query/Mutation root objects.
+    Extract GraphQL operations from Query/Mutation root types.
     """
 
     operations = []
@@ -78,9 +79,9 @@ def extract_fields(root_type, type_map):
         args = []
 
         for arg in field.get("args", []):
-
             args.append({
                 "name": arg["name"],
+                "tokens": tokenize_name(arg["name"]),
                 "type": unwrap_type(arg["type"]),
                 "description": arg.get("description")
             })
@@ -88,6 +89,9 @@ def extract_fields(root_type, type_map):
         operation = {
             "name": field["name"],
             "tokens": tokenize_name(field["name"]),
+
+            "operation_type": operation_type,
+
             "description": field.get("description"),
 
             "deprecated": field.get("isDeprecated", False),
@@ -103,8 +107,10 @@ def extract_fields(root_type, type_map):
     return operations
 
 
-
-def main(path):
+def parse_schema(path):
+    """
+    Parse introspection JSON into normalized operations list.
+    """
 
     with open(path) as f:
         data = json.load(f)
@@ -112,31 +118,30 @@ def main(path):
     schema = data["data"]["__schema"]
 
     types = schema["types"]
-
-    # Improvement #1
     type_map = build_type_map(types)
 
     query_name = schema["queryType"]["name"]
-
-    mutation_name = None
-    if schema.get("mutationType"):
-        mutation_name = schema["mutationType"]["name"]
-
-    query_type = type_map.get(query_name)
-    mutation_type = type_map.get(mutation_name)
+    mutation_name = schema.get("mutationType", {}).get("name")
 
     output = []
 
+    query_type = type_map.get(query_name)
     if query_type:
-        for op in extract_fields(query_type, type_map):
-            op["operation_type"] = "query"
-            output.append(op)
+        output.extend(
+            extract_fields(query_type, type_map, "query")
+        )
 
+    mutation_type = type_map.get(mutation_name)
     if mutation_type:
-        for op in extract_fields(mutation_type, type_map):
-            op["operation_type"] = "mutation"
-            output.append(op)
+        output.extend(
+            extract_fields(mutation_type, type_map, "mutation")
+        )
 
+    return output
+
+
+def main(path):
+    output = parse_schema(path)
     print(json.dumps(output, indent=2))
 
 
