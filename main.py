@@ -11,27 +11,15 @@ import sys
 
 from parser import parse_schema
 from scorer import enrich_operations
-
+from org_generator import generate_org
 
 def main(schema_path):
 
-    #
-    # Parse schema
-    #
-
     operations = parse_schema(schema_path)
-
-    #
-    # Enrich operations
-    #
-
     enriched = enrich_operations(operations)
+    org_output = generate_org(enriched)
 
-    #
-    # Output JSON
-    #
-
-    print(json.dumps(enriched, indent=2))
+    print(org_output)
 
 
 if __name__ == "__main__":
