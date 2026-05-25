@@ -1,3 +1,11 @@
+"""
+main.py
+
+Parse and enrich GraphQL introspection schema.
+
+Outputs JSON to stdout.
+"""
+
 import json
 import sys
 
@@ -20,21 +28,20 @@ def main(schema_path):
     enriched = enrich_operations(operations)
 
     #
-    # Write output
+    # Output JSON
     #
 
-    output_path = "enriched.json"
-
-    with open(output_path, "w") as f:
-        json.dump(enriched, f, indent=2)
-
-    print(f"[+] Wrote {output_path}")
+    print(json.dumps(enriched, indent=2))
 
 
 if __name__ == "__main__":
 
     if len(sys.argv) != 2:
-        print(f"Usage: python {sys.argv[0]} schema.json")
+
+        print(
+            f"Usage: python {sys.argv[0]} schema.json"
+        )
+
         sys.exit(1)
 
     main(sys.argv[1])
