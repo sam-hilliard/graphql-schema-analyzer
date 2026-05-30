@@ -1,0 +1,1555 @@
+[
+  {
+    "name": "0 [ label = \"Activity (Object)\\l\\l[ActivityEvent, ActivityProperties, DateTime, ID, String, UserPublicProfile, UUID]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "3 [ label = \"ApplicantFilter (Object)\\l\\l[Boolean, Classification, Community, EquitySelections, ID, LocalizedFlexibleWorkLocation, LocalizedLanguageAbility, LocalizedOperationalRequirement, LocalizedWorkRegion, Pool, PositionDuration, Skill, WorkStream]\" ]",
+    "type": "object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "11 [ label = \"AwardExperience (Object)\\l\\l[Date, DateTime, Experience, ExperienceSkillRecord, ID, LocalizedAwardedScope, LocalizedAwardedTo, Skill, String, User]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "12 [ label = \"BasicGovEmployeeProfile (Object)\\l\\l[Classification, Department, Email, ID, LocalizedLanguage, String]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "13 [ label = \"CandidateSearchPoolResult (Object)\\l\\l[Int, Pool]\" ]",
+    "type": "object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "15 [ label = \"Community (Object)\\l\\l[DevelopmentProgram, HasRoleAssignments, ID, LocalizedString, Pool, RoleAssignment, String, WorkStream]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "workflow"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "16 [ label = \"CommunityExperience (Object)\\l\\l[Date, DateTime, Experience, ExperienceSkillRecord, ID, Skill, String, User]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "17 [ label = \"CommunityInterest (Object)\\l\\l[Boolean, Community, DateTime, DevelopmentProgramInterest, LocalizedFinanceChiefDuty, LocalizedFinanceChiefRole, String, User, UUID, WorkStream]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "22 [ label = \"Department (Object)\\l\\l[Boolean, DateTime, HasRoleAssignments, ID, Int, LocalizedDepartmentSize, LocalizedString, Pool, RoleAssignment]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "workflow"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "25 [ label = \"EducationExperience (Object)\\l\\l[Date, DateTime, Experience, ExperienceSkillRecord, ID, LocalizedEducationStatus, LocalizedEducationType, Skill, String, User]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "26 [ label = \"EmployeeProfile (Object)\\l\\l[Boolean, Classification, Community, CommunityInterest, Date, Department, LocalizedCSuiteRoleTitle, LocalizedExecCoaching, LocalizedLearningOpportunitiesInterest, LocalizedMentorship, LocalizedOrganizationTypeInterest, LocalizedTargetRole, LocalizedTimeFrame, String, UserPublicProfile, UUID, WorkStream]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "31 [ label = \"GenericJobTitle (Object)\\l\\l[Classification, GenericJobTitleKey, ID, LocalizedString]\" ]",
+    "type": "object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "32 [ label = \"JobPosterTemplate (Object)\\l\\l[Classification, JobPosterTemplateSkill, LocalizedKeywords, LocalizedString, LocalizedSupervisoryStatus, String, UUID, WorkStream]\" ]",
+    "type": "object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "46 [ label = \"LocalizedCandidateExpiryFilter (Object)\\l\\l[CandidateExpiryFilter, LocalizedEnumOption, LocalizedString]\" ]",
+    "type": "object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "48 [ label = \"LocalizedCandidateReferralFilter (Object)\\l\\l[CandidateReferralFilter, LocalizedEnumOption, LocalizedString]\" ]",
+    "type": "object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "51 [ label = \"LocalizedCandidateSuspendedFilter (Object)\\l\\l[CandidateSuspendedFilter, LocalizedEnumOption, LocalizedString]\" ]",
+    "type": "object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "55 [ label = \"LocalizedCSuiteRoleTitle (Object)\\l\\l[CSuiteRoleTitle, LocalizedEnumOption, LocalizedString]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "68 [ label = \"LocalizedExternalRoleSeniority (Object)\\l\\l[ExternalRoleSeniority, LocalizedEnumOption, LocalizedString]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "71 [ label = \"LocalizedFinanceChiefRole (Object)\\l\\l[FinanceChiefRole, LocalizedEnumOption, LocalizedString]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "73 [ label = \"LocalizedGovContractorRoleSeniority (Object)\\l\\l[GovContractorRoleSeniority, LocalizedEnumOption, LocalizedString]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "79 [ label = \"LocalizedKeywords (Object)\\l\\l[String]\" ]",
+    "type": "object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "86 [ label = \"LocalizedPauseReferralsLength (Object)\\l\\l[LocalizedEnumOption, LocalizedString, PauseReferralsLength]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "89 [ label = \"LocalizedPoolCandidateSearchPositionType (Object)\\l\\l[LocalizedEnumOption, LocalizedString, PoolCandidateSearchPositionType]\" ]",
+    "type": "object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "90 [ label = \"LocalizedPoolCandidateSearchRequestReason (Object)\\l\\l[LocalizedEnumOption, LocalizedString, PoolCandidateSearchRequestReason]\" ]",
+    "type": "object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "91 [ label = \"LocalizedPoolCandidateSearchStatus (Object)\\l\\l[LocalizedEnumOption, LocalizedString, PoolCandidateSearchStatus]\" ]",
+    "type": "object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "102 [ label = \"LocalizedSecurityStatus (Object)\\l\\l[LocalizedEnumOption, LocalizedString, SecurityStatus]\" ]",
+    "type": "object",
+    "categories": [
+      "ssrf"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "113 [ label = \"LocalizedTalentNominationUserReview (Object)\\l\\l[LocalizedEnumOption, LocalizedString, TalentNominationUserReview]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "114 [ label = \"LocalizedTargetRole (Object)\\l\\l[LocalizedEnumOption, LocalizedString, TargetRole]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "118 [ label = \"Mutation (Object)\\l\\l[@deprecated, AssessmentResult, AssessmentStep, AssessmentStepInput, AwardExperience, AwardExperienceInput, Boolean, CandidateRemovalReason, Classification, Community, CommunityExperience, CommunityExperienceInput, CommunityInterest, CommunityInterestFilterInput, CreateAssessmentResultInput, CreateClassificationInput, CreateCommunityInput, CreateCommunityInterestInput, CreateDepartmentInput, CreateJobPosterTemplateInput, CreateOffPlatformRecruitmentProcessInput, CreatePoolCandidateAsAdminInput, CreatePoolCandidateSearchRequestInput, CreatePoolInput, CreatePoolSkillInput, CreateSkillFamilyInput, CreateSkillInput, CreateTalentNominationEventInput, CreateTalentNominationInput, CreateTrainingOpportunityInput, CreateUserInput, CreateUserSkillInput, CreateWorkStreamInput, Date, DateTime, Department, DisqualificationReason, DuplicatePoolInput, EducationExperience, EducationExperienceInput, EmployeeProfile, ID, JobPosterTemplate, Notification, NotificationFamily, OffPlatformRecruitmentProcess, PauseReferralsInput, PersonalExperience, PersonalExperienceInput, PlaceCandidateInput, Pool, PoolCandidate, PoolCandidateSearchInput, PoolCandidateSearchRequest, PoolSkill, QualifyAndPlaceCandidateInput, QualifyCandidateInput, ScreeningQuestionAssessmentStepInput, SendUserEmailsVerificationInput, SitewideAnnouncement, SitewideAnnouncementInput, Skill, SkillFamily, String, SyncScreeningQuestionsInput, TalentNomination, TalentNominationEvent, TalentNominationGroup, TrainingOpportunity, UpdateApplicationInput, UpdateAssessmentResultInput, UpdateClassificationInput, UpdateCommunityInput, UpdateCommunityInterestInput, UpdateDepartmentInput, UpdateEmployeeProfileInput, UpdateJobPosterTemplateInput, UpdateOffPlatformRecruitmentProcessInput, UpdatePoolCandidateClaimVerificationInput, UpdatePoolCandidateScreeningStageInput, UpdatePoolCandidateSearchRequestInput, UpdatePoolCandidateStatusInput, UpdatePoolInput, UpdatePoolSkillInput, UpdatePublishedPoolInput, UpdateSkillFamilyInput, UpdateSkillInput, UpdateTalentNominationEventInput, UpdateTalentNominationGroupInput, UpdateTalentNominationInput, UpdateTrainingOpportunityInput, UpdateUserAsAdminInput, UpdateUserAsUserInput, UpdateUserRolesInput, UpdateUserSkillInput, UpdateUserSkillRankingsInput, UpdateUserSubInput, UpdateWorkStreamInput, User, UserAuthInfo, UserFilterInput, UserSkill, UUID, WorkExperience, WorkExperienceInput, WorkStream]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads",
+      "workflow",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "121 [ label = \"OffPlatformRecruitmentProcess (Object)\\l\\l[Classification, Department, LocalizedHiringPlatform, String, User, UUID]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "123 [ label = \"PersonalExperience (Object)\\l\\l[Date, DateTime, Experience, ExperienceSkillRecord, ID, Skill, String, User]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "124 [ label = \"Pool (Object)\\l\\l[ActivityPaginator, AssessmentStep, Boolean, Classification, Community, DateTime, DefinedString, Department, GeneralQuestion, HasRoleAssignments, ID, Int, LocalizedOperationalRequirement, LocalizedPoolAreaOfSelection, LocalizedPoolLanguage, LocalizedPoolOpportunityLength, LocalizedPoolSelectionLimitation, LocalizedPoolStatus, LocalizedPublishingGroup, LocalizedSecurityStatus, LocalizedString, OrderByClause, PoolCandidate, PoolSkill, PoolSkillType, ProcessActivityFilterInput, RoleAssignment, ScreeningQuestion, String, UUID, WorkStream]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "workflow",
+      "search",
+      "ssrf"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "125 [ label = \"PoolCandidate (Object)\\l\\l[ApplicationStep, AssessmentResult, AssessmentResultStatus, AssessmentStep, Boolean, ClaimVerificationResult, Date, DateTime, Department, Experience, GeneralQuestionResponse, ID, Int, JSON, LocalizedApplicationStatus, LocalizedCandidateInterest, LocalizedCandidateRemovalReason, LocalizedCandidateStatus, LocalizedDisqualificationReason, LocalizedEducationRequirementOption, LocalizedPlacementType, LocalizedScreeningStage, Pool, PoolCandidateCategory, ScreeningQuestionResponse, String, User, UUID]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "workflow"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "126 [ label = \"PoolCandidateAdminView (Object)\\l\\l[AssessmentResultStatus, AssessmentStep, Boolean, DateTime, Department, ID, LocalizedApplicationStatus, LocalizedAssessmentDecision, LocalizedCandidateInterest, LocalizedCandidateStatus, LocalizedPlacementType, LocalizedScreeningStage, Pool, PoolCandidateCategory, String, User]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "127 [ label = \"PoolCandidateAdminViewWithSkillCount (Object)\\l\\l[ID, Int, PoolCandidateAdminView]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "128 [ label = \"PoolCandidateAdminViewWithSkillCountPaginator (Object)\\l\\l[PaginatorInfo, PoolCandidateAdminViewWithSkillCount]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "130 [ label = \"PoolCandidateFilter (Object)\\l\\l[Boolean, Classification, EquitySelections, ID, LocalizedLanguageAbility, LocalizedOperationalRequirement, LocalizedWorkRegion, Pool]\" ]",
+    "type": "object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "131 [ label = \"PoolCandidateSearchRequest (Object)\\l\\l[@deprecated, ApplicantFilter, Boolean, Community, DateTime, Department, Email, ID, Int, LocalizedPoolCandidateSearchPositionType, LocalizedPoolCandidateSearchRequestReason, LocalizedPoolCandidateSearchStatus, PoolCandidateFilter, String]\" ]",
+    "type": "object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "132 [ label = \"PoolCandidateSearchRequestPaginator (Object)\\l\\l[PaginatorInfo, PoolCandidateSearchRequest]\" ]",
+    "type": "object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "137 [ label = \"Query (Object)\\l\\l[@deprecated, ApplicantFilterInput, BasicGovEmployeeProfile, Boolean, CandidateSearchPoolResult, ClaimVerificationSort, Classification, Community, CommunityInterestFilterInput, CommunityInterestWithSkillCountPaginator, DateTime, Department, ID, Int, JobPosterTemplate, LocalizedEnumOption, LocalizedEnumString, NotificationFilterInput, NotificationPaginator, OrderByClause, OrderByColumnInput, Pool, PoolBookmarksOrderByInput, PoolCandidate, PoolCandidateAdminViewWithSkillCountPaginator, PoolCandidatePoolNameOrderByInput, PoolCandidatesBaseSort, PoolCandidateSearchInput, PoolCandidateSearchRequest, PoolCandidateSearchRequestInput, PoolCandidateSearchRequestPaginator, PoolCandidateWithSkillCountPaginator, PoolFilterInput, PoolPaginator, PoolWorkStreamNameOrderByInput, PublishingGroup, QueryCommunityInterestsPaginatedOrderByRelationOrderByClause, QueryPoolCandidatesPaginatedAdminViewOrderByRelationOrderByClause, QueryPoolCandidatesPaginatedOrderByRelationOrderByClause, QueryPoolsPaginatedOrderByRelationOrderByClause, Role, SitewideAnnouncement, Skill, SkillFamily, SortOrder, String, TalentNomination, TalentNominationEvent, TalentNominationEventsFilterInput, TalentNominationGroup, TrainingOpportunitiesFilterInput, TrainingOpportunity, TrainingOpportunityPaginator, Trashed, User, UserAuthInfo, UserFilterInput, UserPaginator, UserPublicProfileFilterInput, UserPublicProfilePaginator, UserWorkEmail, UUID, WorkStream]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads",
+      "workflow",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "138 [ label = \"Role (Object)\\l\\l[Boolean, ID, LocalizedString, RoleAssignment, String]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "workflow"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "139 [ label = \"RoleAssignment (Object)\\l\\l[HasRoleAssignments, ID, Role, Team, UserPublicProfile]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads",
+      "workflow"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "143 [ label = \"Skill (Object)\\l\\l[ExperienceSkillRecord, ID, KeyString, LocalizedSkillCategory, LocalizedString, SkillFamily, SkillKeywords]\" ]",
+    "type": "object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "144 [ label = \"SkillFamily (Object)\\l\\l[ID, KeyString, LocalizedString, Skill]\" ]",
+    "type": "object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "145 [ label = \"SkillKeywords (Object)\\l\\l[String]\" ]",
+    "type": "object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "147 [ label = \"TalentNomination (Object)\\l\\l[BasicGovEmployeeProfile, Boolean, Classification, DateTime, Department, DevelopmentProgram, LocalizedTalentNominationLateralMovementOption, LocalizedTalentNominationNomineeRelationshipToNominator, LocalizedTalentNominationSubmitterRelationshipToNominator, LocalizedTalentNominationUserReview, Skill, String, TalentNominationEvent, TalentNominationStep, UUID]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "149 [ label = \"TalentNominationGroup (Object)\\l\\l[BasicGovEmployeeProfile, Boolean, DateTime, Int, LocalizedTalentNominationGroupDecision, LocalizedTalentNominationGroupStatus, String, TalentNomination, TalentNominationEvent, UUID]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "150 [ label = \"Team (Object)\\l\\l[HasRoleAssignments, ID, Pool, RoleAssignment, String]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "workflow"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "154 [ label = \"User (Object)\\l\\l[@deprecated, AwardExperience, BasicGovEmployeeProfile, Boolean, Classification, CommunityExperience, Date, DateTime, Department, EducationExperience, Email, EmployeeProfile, Experience, ID, Int, LocalizedArmedForcesStatus, LocalizedCitizenshipStatus, LocalizedEstimatedLanguageAbility, LocalizedEvaluatedLanguageAbility, LocalizedFlexibleWorkLocation, LocalizedGovEmployeeType, LocalizedGovPositionType, LocalizedIndigenousCommunity, LocalizedLanguage, LocalizedOperationalRequirement, LocalizedPriorityWeight, LocalizedProvinceOrTerritory, LocalizedWorkRegion, NotificationFamily, OffPlatformRecruitmentProcess, PersonalExperience, PhoneNumber, Pool, PoolCandidate, PoolCandidateSearchRequest, PositionDuration, String, TalentNomination, UserAuthInfo, UserSkill, UUID, WorkExperience]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "155 [ label = \"UserAuthInfo (Object)\\l\\l[DateTime, RoleAssignment, String, UUID]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "workflow"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "156 [ label = \"UserFileGeneratedNotification (Object)\\l\\l[DateTime, ID, Notification, String]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "157 [ label = \"UserFileGenerationErrorNotification (Object)\\l\\l[DateTime, ID, Notification, String]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "158 [ label = \"UserPaginator (Object)\\l\\l[PaginatorInfo, User]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "159 [ label = \"UserPublicProfile (Object)\\l\\l[Email, ID, String]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "160 [ label = \"UserPublicProfilePaginator (Object)\\l\\l[PaginatorInfo, UserPublicProfile]\" ]",
+    "type": "object",
+    "categories": [
+      "auth",
+      "uploads"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "161 [ label = \"UserSkill (Object)\\l\\l[Experience, ID, Int, Skill, SkillLevel, User, WhenSkillUsed]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "162 [ label = \"UserWorkEmail (Object)\\l\\l[Email, ID]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "163 [ label = \"WorkExperience (Object)\\l\\l[Boolean, Classification, Date, DateTime, Department, Experience, ExperienceSkillRecord, ID, Int, LocalizedCafEmploymentType, LocalizedCafForce, LocalizedCafRank, LocalizedCSuiteRoleTitle, LocalizedEmploymentCategory, LocalizedExternalRoleSeniority, LocalizedExternalSizeOfOrganization, LocalizedGovContractorRoleSeniority, LocalizedGovContractorType, LocalizedGovEmployeeType, LocalizedGovPositionType, Skill, String, User, WorkStream]\" ]",
+    "type": "object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "0 [ label = \"ApplicantFilterBelongsTo (InputObject)\\l\\l[CreateApplicantFilterInput]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "1 [ label = \"ApplicantFilterInput (InputObject)\\l\\l[Boolean, ClassificationFilterInput, EquitySelectionsInput, FlexibleWorkLocation, IdInput, LanguageAbility, OperationalRequirement, PositionDuration, WorkRegion]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "6 [ label = \"ClaimVerificationSort (InputObject)\\l\\l[SortOrder]\" ]",
+    "type": "input_object",
+    "categories": [
+      "workflow"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "9 [ label = \"ClassificationFilterInput (InputObject)\\l\\l[Int, String]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "13 [ label = \"CommunityInterestFilterInput (InputObject)\\l\\l[Boolean, FlexibleWorkLocation, LanguageAbility, OperationalRequirement, PositionDuration, String, UserPoolFilterInput, UUID, WorkRegion]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "15 [ label = \"CreateApplicantFilterInput (InputObject)\\l\\l[ArmedForcesStatus, Boolean, CitizenshipStatus, ClassificationBelongsToMany, CommunityBelongsTo, EquitySelectionsInput, FlexibleWorkLocation, LanguageAbility, OperationalRequirement, PoolBelongsToMany, PositionDuration, SkillBelongsToMany, WorkRegion, WorkStreamBelongsToMany]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "19 [ label = \"CreateCommunityInterestInput (InputObject)\\l\\l[Boolean, CommunityBelongsTo, CreateDevelopmentProgramInterestHasMany, FinanceChiefDuty, FinanceChiefRole, String, UUID, WorkStreamBelongsToMany]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "25 [ label = \"CreateJobPosterTemplateInput (InputObject)\\l\\l[ClassificationBelongsTo, LocalizedKeywordsInput, LocalizedStringInput, String, SupervisoryStatus, UpdateJobPosterTemplateSkillsInput, WorkStreamBelongsTo]\" ]",
+    "type": "input_object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "28 [ label = \"CreatePoolCandidateAsAdminInput (InputObject)\\l\\l[ApplicationStatus, Boolean, Date, PoolBelongsTo, String, UserBelongsTo]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "29 [ label = \"CreatePoolCandidateSearchRequestInput (InputObject)\\l\\l[ApplicantFilterBelongsTo, Boolean, CommunityBelongsTo, DepartmentBelongsTo, Email, Int, PoolCandidateSearchPositionType, PoolCandidateSearchRequestReason, String]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "33 [ label = \"CreateSkillFamilyInput (InputObject)\\l\\l[KeyString, LocalizedStringInput, SkillBelongsToMany]\" ]",
+    "type": "input_object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "34 [ label = \"CreateSkillInput (InputObject)\\l\\l[KeyString, LocalizedStringInput, SkillCategory, SkillFamilyBelongsToMany, SkillKeywordsInput]\" ]",
+    "type": "input_object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "36 [ label = \"CreateTalentNominationInput (InputObject)\\l\\l[Boolean, ClassificationBelongsTo, DepartmentBelongsTo, DevelopmentProgramBelongsToMany, SkillBelongsToMany, String, TalentNominationEventBelongsTo, TalentNominationLateralMovementOption, TalentNominationNomineeRelationshipToNominator, TalentNominationSubmitterRelationshipToNominator, TalentNominationUserReview, UserBelongsTo]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "38 [ label = \"CreateUserInput (InputObject)\\l\\l[ArmedForcesStatus, AwardExperienceHasMany, Boolean, CitizenshipStatus, CommunityExperienceHasMany, Date, DateTime, EducationExperienceHasMany, Email, EstimatedLanguageAbility, EvaluatedLanguageAbility, FlexibleWorkLocation, IndigenousCommunity, Language, OperationalRequirement, PersonalExperienceHasMany, PhoneNumber, PositionDuration, ProvinceOrTerritory, String, WorkExperienceHasMany, WorkRegion]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "39 [ label = \"CreateUserSkillInput (InputObject)\\l\\l[SkillLevel, WhenSkillUsed]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "53 [ label = \"KeyFilterInput (InputObject)\\l\\l[KeyString]\" ]",
+    "type": "input_object",
+    "categories": [
+      "secrets",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "54 [ label = \"LocalizedKeywordsInput (InputObject)\\l\\l[String]\" ]",
+    "type": "input_object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "56 [ label = \"NotificationFilterInput (InputObject)\\l\\l[Boolean, DateRange]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "59 [ label = \"PauseReferralsInput (InputObject)\\l\\l[Date, PauseReferralsLength, String]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "68 [ label = \"PoolCandidateSearchInput (InputObject)\\l\\l[ApplicantFilterInput, ApplicationStatus, Boolean, CandidateExpiryFilter, CandidateReferralFilter, CandidateRemovalReason, CandidateSuspendedFilter, ClassificationFilterInput, FlexibleWorkLocation, IdInput, Int, PlacementType, PriorityWeight, PublishingGroup, ScreeningStage, String, UUID]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "69 [ label = \"PoolCandidateSearchRequestInput (InputObject)\\l\\l[ID, PoolCandidateSearchStatus, String, UUID]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "70 [ label = \"PoolFilterInput (InputObject)\\l\\l[Boolean, ClassificationFilterInput, PoolStatus, PublishingGroup, String, UUID]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "74 [ label = \"ProcessActivityFilterInput (InputObject)\\l\\l[ActivityEvent, DateRangeOptional, String, UUID]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "75 [ label = \"QualifyAndPlaceCandidateInput (InputObject)\\l\\l[Date, DepartmentBelongsTo, PauseReferralsInput, PlacementType]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "76 [ label = \"QualifyCandidateInput (InputObject)\\l\\l[Date, PauseReferralsInput]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "77 [ label = \"QueryCommunityInterestsPaginatedOrderByRelationOrderByClause (InputObject)\\l\\l[QueryCommunityInterestsPaginatedOrderByUser, SortOrder, String]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "78 [ label = \"QueryCommunityInterestsPaginatedOrderByUser (InputObject)\\l\\l[OrderByRelationWithColumnAggregateFunction, QueryCommunityInterestsPaginatedOrderByUserColumn]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "79 [ label = \"QueryPoolCandidatesPaginatedAdminViewOrderByAssessmentStep (InputObject)\\l\\l[OrderByRelationWithColumnAggregateFunction, QueryPoolCandidatesPaginatedAdminViewOrderByAssessmentStepColumn]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "80 [ label = \"QueryPoolCandidatesPaginatedAdminViewOrderByPool (InputObject)\\l\\l[OrderByRelationWithColumnAggregateFunction, QueryPoolCandidatesPaginatedAdminViewOrderByPoolColumn]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "81 [ label = \"QueryPoolCandidatesPaginatedAdminViewOrderByRelationOrderByClause (InputObject)\\l\\l[QueryPoolCandidatesPaginatedAdminViewOrderByAssessmentStep, QueryPoolCandidatesPaginatedAdminViewOrderByPool, QueryPoolCandidatesPaginatedAdminViewOrderByUser, SortOrder, String]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "82 [ label = \"QueryPoolCandidatesPaginatedAdminViewOrderByUser (InputObject)\\l\\l[OrderByRelationWithColumnAggregateFunction, QueryPoolCandidatesPaginatedAdminViewOrderByUserColumn]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "83 [ label = \"QueryPoolCandidatesPaginatedOrderByAssessmentStep (InputObject)\\l\\l[OrderByRelationWithColumnAggregateFunction, QueryPoolCandidatesPaginatedOrderByAssessmentStepColumn]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "84 [ label = \"QueryPoolCandidatesPaginatedOrderByPool (InputObject)\\l\\l[OrderByRelationWithColumnAggregateFunction, QueryPoolCandidatesPaginatedOrderByPoolColumn]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "85 [ label = \"QueryPoolCandidatesPaginatedOrderByRelationOrderByClause (InputObject)\\l\\l[QueryPoolCandidatesPaginatedOrderByAssessmentStep, QueryPoolCandidatesPaginatedOrderByPool, QueryPoolCandidatesPaginatedOrderByUser, SortOrder, String]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "86 [ label = \"QueryPoolCandidatesPaginatedOrderByUser (InputObject)\\l\\l[OrderByRelationWithColumnAggregateFunction, QueryPoolCandidatesPaginatedOrderByUserColumn]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "87 [ label = \"QueryPoolsPaginatedOrderByClassification (InputObject)\\l\\l[OrderByRelationWithColumnAggregateFunction, QueryPoolsPaginatedOrderByClassificationColumn]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "88 [ label = \"QueryPoolsPaginatedOrderByRelationOrderByClause (InputObject)\\l\\l[QueryPoolsPaginatedOrderByClassification, QueryPoolsPaginatedOrderByUser, SortOrder, String]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "89 [ label = \"QueryPoolsPaginatedOrderByUser (InputObject)\\l\\l[OrderByRelationWithColumnAggregateFunction, QueryPoolsPaginatedOrderByUserColumn]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "90 [ label = \"RoleAssignmentHasMany (InputObject)\\l\\l[RoleInput]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "workflow"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "91 [ label = \"RoleInput (InputObject)\\l\\l[ID]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "92 [ label = \"RolesForTeamHasMany (InputObject)\\l\\l[RolesForTeamInput]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "93 [ label = \"RolesForTeamInput (InputObject)\\l\\l[ID]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "96 [ label = \"SendUserEmailsVerificationInput (InputObject)\\l\\l[EmailType, String]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "101 [ label = \"SkillKeywordsInput (InputObject)\\l\\l[String]\" ]",
+    "type": "input_object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "104 [ label = \"TalentNominationEventsFilterInput (InputObject)\\l\\l[Boolean, TalentNominationEventStatus]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "106 [ label = \"TrainingOpportunitiesFilterInput (InputObject)\\l\\l[Boolean, CourseLanguage]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "111 [ label = \"UpdateCommunityInterestInput (InputObject)\\l\\l[Boolean, FinanceChiefDuty, FinanceChiefRole, String, UpdateDevelopmentProgramInterestHasMany, UUID, WorkStreamBelongsToMany]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "116 [ label = \"UpdateEmployeeProfileInput (InputObject)\\l\\l[Boolean, ClassificationBelongsTo, CommunityBelongsTo, CSuiteRoleTitle, Date, DepartmentBelongsToMany, ExecCoaching, LearningOpportunitiesInterest, Mentorship, OrganizationTypeInterest, String, TargetRole, TimeFrame, WorkStreamBelongsToMany]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "uploads"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "122 [ label = \"UpdateJobPosterTemplateInput (InputObject)\\l\\l[ClassificationBelongsTo, LocalizedKeywordsInput, LocalizedStringInput, String, SupervisoryStatus, UpdateJobPosterTemplateSkillsInput, UUID, WorkStreamBelongsTo]\" ]",
+    "type": "input_object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "125 [ label = \"UpdatePoolCandidateClaimVerificationInput (InputObject)\\l\\l[ClaimVerificationResult, Date]\" ]",
+    "type": "input_object",
+    "categories": [
+      "workflow"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "127 [ label = \"UpdatePoolCandidateSearchRequestInput (InputObject)\\l\\l[PoolCandidateSearchStatus, String]\" ]",
+    "type": "input_object",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "129 [ label = \"UpdatePoolInput (InputObject)\\l\\l[Boolean, ClassificationBelongsTo, DateTime, LocalizedStringInput, PoolAreaOfSelection, PoolLanguage, PoolOpportunityLength, PoolSelectionLimitation, PublishingGroup, SecurityStatus, String, UpdateGeneralQuestionsHasMany, WorkStreamBelongsTo]\" ]",
+    "type": "input_object",
+    "categories": [
+      "ssrf"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "135 [ label = \"UpdateSkillInput (InputObject)\\l\\l[LocalizedStringInput, SkillCategory, SkillFamilyBelongsToMany, SkillKeywordsInput]\" ]",
+    "type": "input_object",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "138 [ label = \"UpdateTalentNominationInput (InputObject)\\l\\l[Boolean, ClassificationBelongsTo, DepartmentBelongsTo, DevelopmentProgramBelongsToMany, SkillBelongsToMany, String, TalentNominationLateralMovementOption, TalentNominationNomineeRelationshipToNominator, TalentNominationStep, TalentNominationSubmitterRelationshipToNominator, TalentNominationUserReview, UserBelongsTo]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "140 [ label = \"UpdateUserAsAdminInput (InputObject)\\l\\l[ArmedForcesStatus, AwardExperienceHasMany, Boolean, CitizenshipStatus, CommunityExperienceHasMany, EducationExperienceHasMany, Email, EstimatedLanguageAbility, EvaluatedLanguageAbility, FlexibleWorkLocation, ID, IndigenousCommunity, Language, OperationalRequirement, PersonalExperienceHasMany, PhoneNumber, PositionDuration, ProvinceOrTerritory, String, WorkExperienceHasMany, WorkRegion]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "141 [ label = \"UpdateUserAsUserInput (InputObject)\\l\\l[ArmedForcesStatus, AwardExperienceHasMany, Boolean, CitizenshipStatus, CommunityExperienceHasMany, EducationExperienceHasMany, EstimatedLanguageAbility, EvaluatedLanguageAbility, FlexibleWorkLocation, ID, IndigenousCommunity, Language, OperationalRequirement, PersonalExperienceHasMany, PhoneNumber, PositionDuration, ProvinceOrTerritory, String, WorkExperienceHasMany, WorkRegion]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "142 [ label = \"UpdateUserRolesInput (InputObject)\\l\\l[RoleAssignmentHasMany, UUID]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "workflow"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "143 [ label = \"UpdateUserSkillInput (InputObject)\\l\\l[SkillLevel, WhenSkillUsed]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "144 [ label = \"UpdateUserSkillRankingsInput (InputObject)\\l\\l[UUID]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "145 [ label = \"UpdateUserSubInput (InputObject)\\l\\l[String, UUID]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "147 [ label = \"UserBelongsTo (InputObject)\\l\\l[Boolean, ID]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "148 [ label = \"UserFilterInput (InputObject)\\l\\l[ApplicantFilterInput, Boolean, ID, String, Trashed, UserPoolFilterInput]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "149 [ label = \"UserPoolFilterInput (InputObject)\\l\\l[ApplicationStatus, CandidateExpiryFilter, CandidateSuspendedFilter, ID]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "150 [ label = \"UserPublicProfileFilterInput (InputObject)\\l\\l[String]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth",
+      "uploads",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "155 [ label = \"WorkExperienceInput (InputObject)\\l\\l[Boolean, CafEmploymentType, CafForce, CafRank, CSuiteRoleTitle, Date, DepartmentBelongsTo, EmploymentCategory, ExternalRoleSeniority, ExternalSizeOfOrganization, GovContractorRoleSeniority, GovContractorType, GovEmployeeType, GovPositionType, Int, String, UpdateExperienceSkills, WorkStreamBelongsToMany]\" ]",
+    "type": "input_object",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "4 [ label = \"KeyString (Scalar)\" ]",
+    "type": "scalar",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "15 [ label = \"CandidateExpiryFilter (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "17 [ label = \"CandidateReferralFilter (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "20 [ label = \"CandidateSuspendedFilter (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "22 [ label = \"ClaimVerificationResult (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "workflow"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "25 [ label = \"CSuiteRoleTitle (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "40 [ label = \"ExternalRoleSeniority (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "43 [ label = \"FinanceChiefRole (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "45 [ label = \"GenericJobTitleKey (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "secrets"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "46 [ label = \"GovContractorRoleSeniority (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "63 [ label = \"PauseReferralsLength (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "66 [ label = \"PoolCandidateSearchPositionType (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "67 [ label = \"PoolCandidateSearchRequestReason (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "68 [ label = \"PoolCandidateSearchStatus (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "78 [ label = \"QueryCommunityInterestsPaginatedOrderByUserColumn (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "79 [ label = \"QueryPoolCandidatesPaginatedAdminViewOrderByAssessmentStepColumn (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "80 [ label = \"QueryPoolCandidatesPaginatedAdminViewOrderByPoolColumn (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "81 [ label = \"QueryPoolCandidatesPaginatedAdminViewOrderByUserColumn (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "82 [ label = \"QueryPoolCandidatesPaginatedOrderByAssessmentStepColumn (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "83 [ label = \"QueryPoolCandidatesPaginatedOrderByPoolColumn (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "84 [ label = \"QueryPoolCandidatesPaginatedOrderByUserColumn (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "85 [ label = \"QueryPoolsPaginatedOrderByClassificationColumn (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "86 [ label = \"QueryPoolsPaginatedOrderByUserColumn (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth",
+      "search"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "88 [ label = \"SecurityStatus (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "ssrf"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "101 [ label = \"TalentNominationUserReview (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "102 [ label = \"TargetRole (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "auth"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  },
+  {
+    "name": "103 [ label = \"TbsSecurityLoggingEventId (Enum)\" ]",
+    "type": "enum",
+    "categories": [
+      "ssrf"
+    ],
+    "incoming": "",
+    "outgoing": "",
+    "paths": null
+  }
+]
